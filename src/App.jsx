@@ -3,6 +3,10 @@
 import './App.css';
 import { useState } from 'react';
 import Counter from './components/Counter';
+import Timer from './components/Timer';
+import TimerTwo from './components/TimerTwo';
+import TimerThree from './components/TimerThree';
+import TimerFour from './components/TimerFour';
 
 function App() {
   const [show, setShow] = useState(true);
@@ -11,6 +15,10 @@ function App() {
     <div className="App">
       <button onClick={() => setShow(!show)}>{show ? 'Hide' : 'Show'}</button>
       {show && <Counter />}
+      {/*       {show && <Timer />}
+      {show && <TimerTwo />} */}
+      {/*  {show && <TimerThree />} */}
+      {show && <TimerFour />}
     </div>
   );
 }
